@@ -1,1 +1,92 @@
+body {
+  background-color: rgb(221, 217, 217);
+  font-family: sans-serif;
+}
 
+h3 {
+  color: rgb(69, 69, 231);
+}
+
+#main-container {
+  width: 50rem;
+  height: fit-content;
+  border: 1px solid rgb(221, 217, 217);
+  padding: 10px 20px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+input[name="todo"] {
+  width: 88%;
+  height: 2rem;
+}
+
+button {
+  color: white;
+  width: 10%;
+  height: 2.3rem;
+  background-color: rgb(69, 69, 231);
+  border: none;
+}
+button:hover,
+.remove-task {
+  cursor: pointer;
+}
+
+#add-item {
+  margin-bottom: 20px;
+}
+
+#list-items > ul {
+  padding: 0 10px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.remove-task {
+  color: rgb(69, 69, 231);
+}
+
+.remove-items {
+  width: fit-content;
+}
+
+#statistic-container {
+  display: flex;
+  justify-content: center;
+}
+#statistic-container div,
+.remove-items {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+#completed,
+.remove-items:first-child {
+  background: green;
+}
+
+#uncompleted,
+.remove-items:last-child {
+  background: red;
+}
+
+#complete-count {
+  background-color: blue;
+}
+
+.is-hidden {
+  display: none;
+}
